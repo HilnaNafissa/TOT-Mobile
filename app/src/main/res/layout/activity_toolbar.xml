@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ToolbarActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/yellow">
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="45dp">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_favorite_24"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:onClick="Like"/>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_account_circle_24"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="283dp"
+                android:layout_marginTop="10dp"
+                android:onClick="Profile"/>
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_info_24"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="316dp"
+                android:layout_marginTop="10dp"
+                android:onClick="Info"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/blur"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="595dp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:onClick="Next"
+        android:text="NEXT"/>
+
+
+</RelativeLayout>
